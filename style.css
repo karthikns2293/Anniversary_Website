@@ -1,0 +1,144 @@
+/* Base setup */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fef6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Background image (centered & blurred) */
+  .bg-center {
+    background: url('bg_center.jpg') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  /* Side GIFs */
+  .gif-left, .gif-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 700px; /* ⬆️ increased from 200px to 300px */
+    width: 200px;  /* ⬆️ added width explicitly */
+    z-index: 2;
+    object-fit: cover; /* Optional: ensures the GIF fills the box cleanly */
+  }
+  
+  
+  .gif-left {
+    left: 20px;
+  }
+  
+  .gif-right {
+    right: 20px;
+  }
+  
+  /* Envelope screen */
+  .envelope-screen {
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .envelope-button {
+    font-size: 4rem;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .envelope-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .click-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Invitation container */
+  .container {
+    text-align: center;
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+    max-width: 600px;
+    z-index: 3;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #d63384;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #444;
+  }
+  
+  .buttons button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .buttons button:hover {
+    transform: scale(1.05);
+    background-color: #ff85c1;
+  }
+  
+  #response {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #c2185b;
+    font-weight: bold;
+  }
+  
+  /* Itinerary section */
+  #itinerary {
+    margin-top: 40px;
+    background-color: #fff6f9;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.3);
+  }
+  
+  #itinerary h2 {
+    color: #c2185b;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .timeline li {
+    margin-bottom: 15px;
+    color: #444;
+  }
+  

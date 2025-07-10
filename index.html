@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Date Invitation 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background and GIFs -->
+  <div class="bg-center"></div>
+  <img src="me-love.gif" class="gif-left" alt="Me saying I love you" />
+  <img src="her-dance.gif" class="gif-right" alt="Her funny dance" />
+
+  <!-- Envelope screen -->
+  <div id="envelope-screen" class="envelope-screen">
+    <button class="envelope-button" onclick="openEnvelope()">💌</button>
+    <p class="click-text">Click to open your invitation</p>
+  </div>
+
+  <!-- Hidden invitation -->
+  <div class="container" id="invitation" style="display: none;">
+    <h1>Hey Kitten 🐾</h1>
+    <p>Will you go out on a cute date with me tomorrow? 🌸</p>
+
+    <div class="buttons">
+      <button onclick="respond('yes')">Yes 🥰</button>
+      <button onclick="respond('yesss')">Yes 😘</button>
+    </div>
+
+    <p id="response"></p>
+
+    <div id="itinerary" style="display:none;">
+      <h2>🗓️ Our Cute Date Plan</h2>
+      <ul class="timeline">
+        <li><strong>1️⃣:</strong> Meet at Lulu Mall to watch the Superman movie 🦸‍♂️🎬</li>
+        <li><strong>2️⃣:</strong> Go to McDonald's in Mantri Square Mall 🍔🍟</li>
+        <li><strong>3️⃣:</strong> Walk to Sankey Tank and chill with ducks 🦆🌇</li>
+        <li><strong>4️⃣:</strong> Successful date, bye bye meet you again soon 💋💖</li>
+      </ul>
+     
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
